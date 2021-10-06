@@ -15,17 +15,17 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.white,
       ),
-      title: 'Flutter Demo',
+      title: 'YouTube.app',
       home: Scaffold(
         appBar: AppBar(
           leading: Icon(
             Icons.video_camera_back,
           color:Colors.red,
+            size: 36,
           ),
           title: const Text('Melon Groove'),
           actions: <Widget>[
             SizedBox(
-              // width: 30,
               child: TextButton(
                   onPressed: onPressed(),
                   child: Icon(
@@ -39,8 +39,16 @@ class MyApp extends StatelessWidget {
           ],
         ),
         body: Container(
+
             child: Column(
               children: <Widget>[
+                Container(
+                  color:Colors.amber[200],
+                  width: double.infinity,
+                  height:70,
+                  // child: Image.network(
+                  //   'https://imatabi.jp/wp-content/uploads/2018/01/pinklake.jpg',
+                  ),
                 Padding(
                   padding: const EdgeInsets.all(20.0),
 
@@ -59,6 +67,7 @@ class MyApp extends StatelessWidget {
                         children: <Widget>[
                           const Text('Melon Groove',
                             style: TextStyle(
+
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
                             ),
@@ -70,7 +79,14 @@ class MyApp extends StatelessWidget {
                                     'チャンネル登録',
                                 style: TextStyle(
                                   color: Colors.red[800],
-                                  fontSize: 18,
+                                  fontSize: 16,
+                                ),
+                                  ),
+                                  Text(
+                                    'チャンネル登録者数 6480人',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
                                 ),
                                   ),
                                 ],
