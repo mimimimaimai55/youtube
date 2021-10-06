@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           title: const Text('Melon Groove'),
           actions: <Widget>[
             SizedBox(
-              width: 30,
+              // width: 30,
               child: TextButton(
                   onPressed: onPressed(),
                   child: Icon(
@@ -31,26 +31,32 @@ class MyApp extends StatelessWidget {
                 )),
           ],
         ),
-        body: SizedBox(
-          width: double.infinity,
-          child: Container(
-            decoration: BoxDecoration(color: Colors.pink),
-            child: Column(
-              children: <Widget>[
-                Row(
-                  children: <Widget>[
-                    SizedBox(
-                        width:300,child: Image.network('https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_flutter_icon_130599.png')),
-                  ],
-                ),
-              ],
-
+        body: Container(
+          //横方向の真ん中合わせ
+            child: Center(
+              child: Column(
+                //縦方向に並べるカラムを中央に配置
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Row(
+                    //よくわかってない
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Container(
+                          child:Image.network(
+                              'https://hiyokoyarou.com/wp-content/uploads/2014/08/catsn.png'
+                          ),
+                          width: 300, height:300, ),
+                    ],
+                  )
+                ],
+              ),
             ),
-          ),
         ),
       ),
     );
   }
 
-  onPressed() {}
-}
+
+onPressed() {
+}}
