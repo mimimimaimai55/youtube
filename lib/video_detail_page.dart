@@ -1,12 +1,206 @@
 import 'package:flutter/material.dart';
 
 class VideoDetailPage extends StatelessWidget {
+  onPressed() {}
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:AppBar(),
-      body: Container(),
+      appBar: AppBar(
+        // leading: Icon(
+        //   Icons.video_camera_back,
+        //   color:Colors.red,
+        //   size: 36,
+        // ),
+        iconTheme: IconThemeData(color: Colors.white),
+        backgroundColor: Colors.black,
+        title: const Text(
+          'Melon Groove',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 20,
+          ),
+        ),
+        actions: <Widget>[
+          SizedBox(
+            child: TextButton(
+                onPressed: onPressed(),
+                child: Icon(
+                  Icons.search,
+                  color: Colors.white,
+                )),
+          ),
+          TextButton(
+              onPressed: onPressed(),
+              child: Icon(
+                Icons.more_vert,
+                color: Colors.white,
+              )),
+        ],
+      ),
+      body: Container(
+        padding: const EdgeInsets.all(12.0),
+        child: Column(
+          children: <Widget>[
+            Image.network(
+              'https://i.ytimg.com/vi/y0Blq-W0MZM/maxresdefault.jpg',
+            ),
+            Container(
+              child: Padding(
+                padding: const EdgeInsets.only(top: 12, bottom: 6),
+                child: Row(
+                  children: <Widget>[
+                    Text(
+                      '#citypop',
+                      style: TextStyle(
+                        color: Colors.indigo,
+                        fontSize: 18,
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.only(left: 12),
+                      child: Text(
+                        '#BGM',
+                        style: TextStyle(
+                          color: Colors.indigo,
+                          fontSize: 18,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Text(
+              'Japanese City Pop Mixtape Vol.20 - Summer Night［70-80s］',
+              style: TextStyle(
+                fontSize: 26,
+              ),
+            ),
+            Container(
+              width: double.infinity,
+              child: Text(
+                '23万回視聴・5ヶ月前',
+                style: TextStyle(),
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Container(
+                  child: Column(
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.only(top:10),
+                        child: TextButton(
+                          onPressed: onPressed(),
+                          child: Icon(
+                            Icons.thumb_up_off_alt,
+                            color: Colors.black,
+                            size: 28,
+                          ),
+                        ),
+                      ),
+                      Text('1995',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                Container(
+                  child: Column(
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.only(top:10),
+                        child: TextButton(
+                          onPressed: onPressed(),
+                          child: Icon(
+                            Icons.thumb_down_off_alt,
+                            color: Colors.black,
+                            size: 28,
+                          ),
+                        ),
+                      ),
+                      Text('57',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),                Container(
+                  child: Column(
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.only(top:10),
+                        child: TextButton(
+                          onPressed: onPressed(),
+                          child: Icon(
+                            Icons.reply,
+                            color: Colors.black,
+                            size: 28,
+                          ),
+                        ),
+                      ),
+                      Text('共有',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),                Container(
+                  child: Column(
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.only(top:10),
+                        child: TextButton(
+                          onPressed: onPressed(),
+                          child: Icon(
+                            Icons.library_add,
+                            color: Colors.black,
+                            size: 28,
+                          ),
+                        ),
+                      ),
+                      Text('保存',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),                Container(
+                  child: Column(
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.only(top:10),
+                        child: TextButton(
+                          onPressed: onPressed(),
+                          child: Icon(
+                            Icons.outlined_flag,
+                            color: Colors.black,
+                            size: 28,
+                          ),
+                        ),
+                      ),
+                      Text('報告',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

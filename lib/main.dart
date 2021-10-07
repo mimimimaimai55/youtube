@@ -38,6 +38,7 @@ class MyApp extends StatelessWidget {
                 )),
           ],
         ),
+
         body: Container(
 
             child: Column(
@@ -56,20 +57,22 @@ class MyApp extends StatelessWidget {
                     children: <Widget>[
 
                       SizedBox(
-                        // width: 40,
-                        // height:40,
                         child: Image.network(
                             'https://hiyokoyarou.com/wp-content/uploads/2014/08/catsn.png',
                             width: 70, height:70,
                         ),
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          const Text('Melon Groove',
-                            style: TextStyle(
-
-                              fontSize: 22,
-                              fontWeight: FontWeight.bold,
+                          Container(
+                            padding: const EdgeInsets.only(left: 10),
+                            child: const Text(
+                              'Melon Groove',
+                              style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ),
                           TextButton(onPressed: onPressed(),
@@ -79,15 +82,18 @@ class MyApp extends StatelessWidget {
                                     'チャンネル登録',
                                 style: TextStyle(
                                   color: Colors.red[800],
-                                  fontSize: 16,
+                                  fontSize: 14,
                                 ),
                                   ),
-                                  Text(
-                                    'チャンネル登録者数 6480人',
+                                  Container(
+                                    padding: const EdgeInsets.only(left: 10),
+                                    child: Text(
+                                      'チャンネル登録者数 6480人',
                                 style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 12,
+                                    color: Colors.black,
+                                    fontSize: 12,
                                 ),
+                                    ),
                                   ),
                                 ],
                               )),
