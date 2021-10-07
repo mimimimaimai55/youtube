@@ -198,7 +198,80 @@ class VideoDetailPage extends StatelessWidget {
 
               ],
             ),
+            Divider(
+              height: 40,
+              thickness: 1,
+              color: Colors.grey[400],
+              // indent: 16,
+              // endIndent: 16,
+            ),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                Image.network(
+                  'https://hiyokoyarou.com/wp-content/uploads/2014/08/catsn.png',
+                  width: 40, height:40,
+                ),
+
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text('Melon Groove',
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                    Text('チャンネル登録者数 6480人',
+                      style: TextStyle(
+                        fontSize: 14,
+                      ),
+                    ),
+                  ],
+                ),
+
+
+                Text('チャンネル登録',
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.red[800],
+                  ),
+                ),
+              ],
+            ),
+
+            Divider(
+              height: 40,
+              thickness: 1,
+              color: Colors.grey[400],
+              // indent: 16,
+              // endIndent: 16,
+            ),
+
+            Padding(
+              padding: const EdgeInsets.only(left:10),
+              child: Container(
+                width: double.infinity,
+                child: Text('コメント数・68',
+                  style: TextStyle(
+                    fontSize: 18,
+                  ),
+                ),
+              ),
+            ),
+
+            Divider(
+              height: 40,
+              thickness: 1,
+              color: Colors.grey[400],
+              // indent: 16,
+              // endIndent: 16,
+            ),
+
+
           ],
+
+
         ),
       ),
     );
