@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
 
                       SizedBox(
                         child: Image.network(
-                            'http://flat-icon-design.com/f/f_health_36/s256_f_health_36_0bg.png',
+                            'https://hiyokoyarou.com/wp-content/uploads/2014/08/catsn.png',
                             width: 70, height:70,
                         ),
                       ),
