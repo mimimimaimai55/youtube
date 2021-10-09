@@ -291,36 +291,64 @@ class VideoDetailPage extends StatelessWidget {
                         Container(
                           // width: double.infinity,
                           // height:60,
-                          padding: const EdgeInsets.only(top: 20),
+                          padding: const EdgeInsets.only(top: 20,bottom: 20),
                           // child: Padding(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: <Widget>[
-                                Image.network(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              Image.network(
                                 'https://hiyokoyarou.com/wp-content/uploads/2014/08/catsn.png',
-                                  width: 50,
-                                  height: 50,
-                                ),
-
-                                  Expanded(
-                                    child: Text(
-                                      'Tokyo Night Pop / Japanese Neo City Pop',
-                                      style: TextStyle(
-                                        fontSize: 18,
-                                      ),
-                                    ),
+                                width: 50,
+                                height: 50,
+                              ),
+                              Expanded(
+                                child: Text(
+                                  'Tokyo Night Pop / Japanese Neo City Pop',
+                                  style: TextStyle(
+                                    fontSize: 18,
                                   ),
-                                 Icon(Icons.more_vert,
-                                     size: 24),
+                                ),
+                              ),
+                              Icon(Icons.more_vert, size: 24),
+                            ],
+                          ),
+                        ),
 
-                              ],
+
+                    Image.network(
+                      'https://i.ytimg.com/vi/y0Blq-W0MZM/maxresdefault.jpg',
+                    ),
+                    Container(
+                      // width: double.infinity,
+                      // height:60,
+                      padding: const EdgeInsets.only(top: 20,bottom: 20),
+                      // child: Padding(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Image.network(
+                            'https://hiyokoyarou.com/wp-content/uploads/2014/08/catsn.png',
+                            width: 50,
+                            height: 50,
+                          ),
+                          Expanded(
+                            child: Text(
+                              'Tokyo Night Pop / Japanese Neo City Pop',
+                              style: TextStyle(
+                                fontSize: 18,
+                              ),
                             ),
                           ),
+                          Icon(Icons.more_vert, size: 24),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
 
 
-                      ],
-                    )
                   ],
                 ),
               ),
