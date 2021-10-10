@@ -46,9 +46,10 @@ class MyApp extends StatelessWidget {
                 Container(
                   color:Colors.amber[200],
                   width: double.infinity,
-                  height:70,
-                  // child: Image.network(
-                  //   'https://imatabi.jp/wp-content/uploads/2018/01/pinklake.jpg',
+                   height:70,
+         // Image.network(
+         //            'https://imatabi.jp/wp-content/uploads/2018/01/pinklake.jpg',
+
                   ),
                 Padding(
                   padding: const EdgeInsets.all(20.0),

@@ -291,6 +291,8 @@ class VideoDetailPage extends StatelessWidget {
                         Container(
                           // width: double.infinity,
                           // height:60,
+
+
                           padding: const EdgeInsets.only(top: 20,bottom: 20),
                           // child: Padding(
                           child: Row(
@@ -302,6 +304,7 @@ class VideoDetailPage extends StatelessWidget {
                                 width: 50,
                                 height: 50,
                               ),
+
                               Expanded(
                                 child: Text(
                                   'Tokyo Night Pop / Japanese Neo City Pop',
